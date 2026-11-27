@@ -25,7 +25,7 @@ jobs:
           source ./emsdk_env.sh
           cd "$GITHUB_WORKSPACE"
           mkdir -p dist
-          emcc src/main.cpp -O2 --use-port=sdl2 -sALLOW_MEMORY_GROWTH=1 -o dist/index.html
+          em++ src/main.cpp -O2 --use-port=sdl2 -sALLOW_MEMORY_GROWTH=1 -o dist/index.html
 
       - uses: actions/configure-pages@v5
 
